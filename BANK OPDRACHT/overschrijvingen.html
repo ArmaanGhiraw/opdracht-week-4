@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overschrijvingen - Moderne Bankapp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Moderne Bankapp</h1>
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Rekeningen</a></li>
+            <li><a href="overschrijvingen.html">Overschrijvingen</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="overschrijvingen">
+        <h2 class="dashboard-title">Geld Overschrijven</h2>
+
+        <div class="dashboard-container">
+            <div class="rekening-form-wrapper">
+                <form id="overschrijving-form" class="rekening-form">
+                    <label for="van-rekening">Van rekening:</label>
+                    <select id="van-rekening" required></select>
+
+                    <label for="naar-rekening">Naar rekening:</label>
+                    <select id="naar-rekening" required></select>
+
+                    <label for="bedrag">Bedrag (€):</label>
+                    <input type="number" id="bedrag" step="0.01" required>
+
+                    <button type="submit">Overschrijven</button>
+
+                    <div id="overschrijving-notificatie" style="margin-top:10px;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

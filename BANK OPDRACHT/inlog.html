@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inlogpage - Moderne Bankapp</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+</head>
+<body class="scroll">
+
+    <header>
+        <h1>Moderne Bankapp</h1>
+        <br>
+    </header>
+
+    <main>
+
+
+    <div class="login-container">
+        <h2>Inloggen</h2>
+        <p>Log hier in op je account.</p>
+
+        <form id="login-form">
+            <label for="username">Gebruikersnaam:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Wachtwoord:</label>
+            <input type="password" id="password" required>
+<br>
+            <button type="button" onclick="login()">Inloggen</button>
+        </form>
+
+        <div id="notification"></div>
+
+    </main>
+
+</body>
+</html>

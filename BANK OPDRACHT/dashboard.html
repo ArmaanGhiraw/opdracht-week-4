@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Moderne Bankapp</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Moderne Bankapp</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html" data-section="rekeningen">Rekeningen</a></li>
+                <li><a href="overschrijvingen.html" data-section="overschrijvingen">Overschrijvingen</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main>
+    <section id="rekeningen">
+        <!-- Titel gecentreerd boven het dashboard -->
+        <h2 class="dashboard-title">Rekeningen Dashboard</h2>
+
+        <div class="dashboard-container">
+
+            <!-- Formulier nieuwe rekening -->
+            <div class="rekening-form-wrapper">
+                <form id="rekening-form" class="rekening-form">
+                    <h3>Nieuwe rekening</h3>
+
+                    <label for="rekeningnaam">Rekeningnaam:</label>
+                    <input type="text" id="rekeningnaam" placeholder="Bijv. Spaarrekening" required>
+
+                    <label for="rekeningsaldo">Startsaldo (€):</label>
+                    <input type="number" id="rekeningsaldo" step="0.01" placeholder="Bijv. 1500.00" required>
+
+                    <button type="submit">Rekening toevoegen</button>
+                </form>
+            </div>
+
+            <!-- Overzicht van rekeningen -->
+            <div class="rekening-overzicht">
+                <h3>Jouw rekeningen</h3>
+                <div id="rekening-lijst" class="rekening-lijst"></div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+</body>
+</html>

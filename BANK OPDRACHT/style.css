@@ -1,0 +1,317 @@
+/* Minimal stylesheet: only rules that are used by the current HTML files */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.scroll{
+    overflow-y: hidden;
+}
+header {
+    background-color: #1e88e5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Show sections by default; JS no longer toggles .active */
+section {
+    display: block;
+}
+
+h1 {
+    margin: 0;
+}
+
+form {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+
+ul li {
+  padding: 6px 9px;
+  background: #1565c0;
+  color: #fff;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  transition: all 0.25s ease;
+  cursor: pointer;  
+}
+
+ul li:hover {
+  border-color: #94b7df;
+  background: #1e69bf;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+.login-container {
+    width: 350px;
+    margin: 0 auto;                    /* Horizontaal centreren */
+    margin-top: 60px;                  /* Iets hoger op de pagina */
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+/* Titel boven het dashboard centreren */
+.dashboard-title {
+    text-align: center;
+    color: #1e88e5;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Dashboard container horizontaal centreren en iets naar boven */
+.dashboard-container {
+    display: flex;
+    justify-content: center; /* horizontaal centreren */
+    align-items: flex-start;
+    gap: 40px;
+    padding-top: 20px; /* verticale ruimte boven het dashboard */
+}
+
+/* Formulier styling */
+.rekening-form-wrapper {
+    flex: 0 0 350px; /* vaste breedte */
+}
+
+.rekening-form {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rekening-form h3 {
+    margin-top: 0;
+    color: #1e88e5;
+}
+
+.rekening-form input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.rekening-form button {
+    background-color: #1e88e5;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.rekening-form button:hover {
+    background-color: #1565c0;
+}
+
+/* Overzicht van rekeningen */
+.rekening-overzicht {
+    flex: 0 0 300px;
+}
+
+.rekening-lijst {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rekening-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.rekening-card h4 {
+    margin: 0 0 6px;
+    color: #1e88e5;
+}
+
+.rekening-card button {
+    background-color: #d9534f;
+    margin-top: 8px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.rekening-card button:hover {
+    background-color: #b52b27;
+}
+
+
+
+/* Header zoals dashboard */
+header {
+    background-color: #1e88e5; /* blauwe header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Titel boven content */
+.dashboard-title {
+    text-align: center;
+    color: #1e88e5;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Centrale container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    min-height: 70vh;
+}
+
+/* Introductietekst */
+.home-intro {
+    text-align: center;
+    max-width: 500px;
+    color: #14387e;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Knoppen sectie */
+.home-actions {
+    display: flex;
+    gap: 20px;
+}
+
+/* Eenvoudige knop styling zoals dashboard */
+.btn {
+    background-color: #1e88e5;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1565c0;
+}
+
+/* Optioneel: maak main iets breder voor meer overzicht */
+main {
+    padding: 20px;
+}
+
+#overschrijving-form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e88e5; /* groene knop */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #14549d;
+    transition: background-color 0.3s ease-in-out;
+}
