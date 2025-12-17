@@ -1,0 +1,12 @@
+Wat snap ik nu beter dan voor deze opdracht?
+
+ik snap nu beter hoe je notificaties laat zien wanneer er bijvoorbeeld niet genoeg saldo op een rekening staat
+--------------------------------------------------------------------------------------------------------------------
+Waarvoor heb ik AI gebruikt? (uitleg/controle/code genereren/debuggen)
+
+om de code te genereren met uitleg erbij.
+--------------------------------------------------------------------------------------------------------------------
+
+Zou ik deze opdracht zonder AI kunnen maken? (ja/deels/nee)
+
+nee
